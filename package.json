@@ -1,0 +1,30 @@
+{
+  "name": "dynamic-import",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --config ./webpack.config.js",
+    "build": "NODE_ENV=production webpack --colors --config ./webpack.config.js"
+  },
+  "repository": "https://github.com/y-endo-sandobox/dynamic-import.git",
+  "author": "YukiEndo",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
+    "terser-webpack-plugin": "^2.3.3",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "regenerator-runtime": "^0.13.3"
+  }
+}
