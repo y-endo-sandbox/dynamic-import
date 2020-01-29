@@ -11,6 +11,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
+    chunkFilename: '[name].js',
+    jsonpFunction: 'dynamic-import',
     path: path.join(__dirname, './public/assets/js/')
   },
   module: {

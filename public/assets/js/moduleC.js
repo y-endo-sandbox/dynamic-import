@@ -1,0 +1,1 @@
+(window["dynamic-import"]=window["dynamic-import"]||[]).push([[2],{79:function(n,i,t){"use strict";function o(){alert("moduleC")}t.r(i),t.d(i,"default",(function(){return o}))}}]);

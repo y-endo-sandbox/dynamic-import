@@ -3,7 +3,7 @@ let moduleB;
 
 // moduleBを3秒後、動的に読み込んでみる
 setTimeout(() => {
-  import('./modules/moduleB').then(module => {
+  import(/* webpackChunkName: "moduleB" */ './modules/moduleB').then(module => {
     moduleB = module.default;
   });
 }, 3000);
@@ -23,7 +23,7 @@ document.addEventListener('click', async event => {
       moduleB();
       break;
     case 'moduleC()': {
-      const { default: moduleC } = await import('./modules/moduleC');
+      const { default: moduleC } = await import(/* webpackChunkName: "moduleC" */ './modules/moduleC');
       moduleC();
       break;
     }
